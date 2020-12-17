@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="38992326-2119-410c-bac1-4fd8fbcb8451" name="Default Changelist" comment="" />
+    <list default="true" id="38992326-2119-410c-bac1-4fd8fbcb8451" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/shiro-day01-05ciphertext-realm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/realm/DefinitionRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/service/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/util/EncodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/resources/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/test/java/org/shiro/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/classes/org/shiro/DigestUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/classes/org/shiro/EncodeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/test-classes/org/shiro/TestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +51,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1liLXCnRTUhFzKwlgZgiqdpog1N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,9 +63,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,19 +79,24 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\shiro-java" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.shiro.service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.shiro.realm" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\shiro-java\shiro-day01-05ciphertext-realm\src\main" />
+      <recent name="D:\shiro-java\shiro-day01-05ciphertext-realm\src\main\java\org\shiro" />
+      <recent name="D:\shiro-java" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestApplication.hexTest (1)">
+  <component name="RunManager" selected="JUnit.TestApplication.testA">
     <configuration name="TestApplication.base64Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shiro-day01-03encode-decode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.shiro.*" />
+          <option name="PATTERN" value="org.shiro.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,11 +108,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestApplication.hexTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro-day01-04hash" />
+    <configuration name="TestApplication.hexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-day01-03encode-decode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.shiro.*" />
+          <option name="PATTERN" value="org.shiro.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,10 +125,10 @@
       </method>
     </configuration>
     <configuration name="TestApplication.hexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro-day01-03encode-decode" />
+      <module name="shiro-day01-04hash" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.shiro.*" />
+          <option name="PATTERN" value="org.shiro.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,8 +140,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestApplication.testA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-day01-05ciphertext-realm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.shiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.shiro" />
+      <option name="MAIN_CLASS_NAME" value="org.shiro.TestApplication" />
+      <option name="METHOD_NAME" value="testA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestApplication.testA" />
         <item itemvalue="JUnit.TestApplication.hexTest (1)" />
         <item itemvalue="JUnit.TestApplication.base64Test" />
         <item itemvalue="JUnit.TestApplication.hexTest" />
@@ -114,22 +178,33 @@
       <workItem from="1608075006419" duration="287000" />
       <workItem from="1608075353839" duration="2456000" />
       <workItem from="1608159580090" duration="1650000" />
-      <workItem from="1608162518508" duration="714000" />
+      <workItem from="1608162518508" duration="2211000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1608162017406">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1608162017406" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1608076185131">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1608163967988">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1608076185131" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1608163967988" />
     <state x="388" y="95" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1608075023674">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -138,38 +213,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608075273366" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1608162461075">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1608164680117">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608162461075" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1608162461074">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608164680117" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1608164680117">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608162461074" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1608162461074">
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608164680117" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1608164680117">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608162461074" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1608162461074">
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608164680117" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1608164680117">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608162461074" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1608162461075">
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608164680117" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1608164679992">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608162461075" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1608162461075">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608164679992" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1608164679992">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608162461075" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1608162461075">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608164679992" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1608164679992">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608162461075" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1608162461075">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608164679992" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1608164679992">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608162461075" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608164679992" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1608162843938">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

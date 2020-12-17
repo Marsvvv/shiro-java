@@ -13,5 +13,6 @@
         <module>shiro-day01-02realm</module>
         <module>shiro-day01-03encode-decode</module>
         <module>shiro-day01-04hash</module>
+        <module>shiro-day01-05ciphertext-realm</module>
     </modules>
 </project>

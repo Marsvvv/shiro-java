@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/shiro-day01-02realm/shiro-day01-02realm.iml" filepath="$PROJECT_DIR$/shiro-day01-02realm/shiro-day01-02realm.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-day01-03encode-decode/shiro-day01-03encode-decode.iml" filepath="$PROJECT_DIR$/shiro-day01-03encode-decode/shiro-day01-03encode-decode.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-day01-04hash/shiro-day01-04hash.iml" filepath="$PROJECT_DIR$/shiro-day01-04hash/shiro-day01-04hash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro-day01-05ciphertext-realm/shiro-day01-05ciphertext-realm.iml" filepath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/shiro-day01-05ciphertext-realm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/shiro-java.iml" filepath="$PROJECT_DIR$/.idea/shiro-java.iml" />
     </modules>
   </component>
