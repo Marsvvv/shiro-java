@@ -52,7 +52,7 @@ public class DigestUtil {
         String sha1 = sha1(password, salt);
 
         map.put("salt", salt);
-        map.put("sha1", sha1);
+        map.put("password", sha1);
 
         return map;
     }
