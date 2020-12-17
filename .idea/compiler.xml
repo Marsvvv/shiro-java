@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shiro-day01-04hash" />
+        <module name="shiro-day01-02realm" />
+        <module name="shiro-day01-03encode-decode" />
+        <module name="shiro-java" />
+        <module name="shiro-day01-01authenticator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shiro-day01-01authenticator" target="8" />
+      <module name="shiro-day01-02realm" target="8" />
+      <module name="shiro-day01-03encode-decode" target="8" />
+      <module name="shiro-day01-04hash" target="8" />
+      <module name="shiro-java" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
