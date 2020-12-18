@@ -19,9 +19,67 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38992326-2119-410c-bac1-4fd8fbcb8451" name="Default Changelist" comment="has problem">
+    <list default="true" id="38992326-2119-410c-bac1-4fd8fbcb8451" name="Default Changelist" comment="resolve not login problem">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shiro_day01_07web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shiro_day01_07web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/shiro-day01-06authentication-realm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/realm/DefinitionRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/service/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/util/EncodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/resources/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/test/java/org/shiro/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/DigestUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/EncodeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/realm/DefinitionRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/service/SecurityService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/service/SecurityServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/util/DigestUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/util/EncodeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/test-classes/org/shiro/TestApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/shiro-day01-07web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/realm/DefinitionRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/impl/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/util/EncodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LogoutSerlvet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderAddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderDelServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/resources/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/order-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/order-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/util/DigestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/classes/org/shiro/util/DigestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/classes/org/shiro/util/DigestUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,26 +89,40 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1liLXCnRTUhFzKwlgZgiqdpog1N" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shiro-day01-07web" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,51 +135,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.shiro.service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.shiro.realm" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\shiro-java\shiro-day01-07web\src\main\webapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\shiro-java\shiro-day01-05ciphertext-realm\src\main" />
-      <recent name="D:\shiro-java\shiro-day01-05ciphertext-realm\src\main\java\org\shiro" />
+      <recent name="D:\shiro-java\shiro-day01-07web\src\main\webapp" />
+      <recent name="D:\shiro-java\shiro-day01-07web\src\main\resources" />
+      <recent name="D:\shiro-java\shiro-day01-07web\src\main\java\org\shiro" />
       <recent name="D:\shiro-java" />
+      <recent name="D:\shiro-java\shiro-day01-05ciphertext-realm\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.shiro.web" />
+      <recent name="org.shiro" />
+      <recent name="org.shiro.realm" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.shiro.service.impl" />
+      <recent name="org.shiro.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestApplication.testA">
-    <configuration name="TestApplication.base64Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro-day01-03encode-decode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.shiro.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.shiro" />
-      <option name="MAIN_CLASS_NAME" value="org.shiro.TestApplication" />
-      <option name="METHOD_NAME" value="base64Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestApplication.hexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro-day01-03encode-decode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.shiro.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.shiro" />
-      <option name="MAIN_CLASS_NAME" value="org.shiro.TestApplication" />
-      <option name="METHOD_NAME" value="hexTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="TestApplication.hexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shiro-day01-04hash" />
       <extension name="coverage">
@@ -124,29 +172,148 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestApplication.testA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro-day01-05ciphertext-realm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.shiro.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.shiro" />
-      <option name="MAIN_CLASS_NAME" value="org.shiro.TestApplication" />
-      <option name="METHOD_NAME" value="testA" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/shiro-day01-07web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="shiro-day01-07web [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/shiro-day01-07web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_shiro-java" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61099" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestApplication.testA" />
-        <item itemvalue="JUnit.TestApplication.base64Test" />
-        <item itemvalue="JUnit.TestApplication.hexTest" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61100" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -162,7 +329,8 @@
       <workItem from="1608075353839" duration="2456000" />
       <workItem from="1608159580090" duration="1650000" />
       <workItem from="1608162518508" duration="2315000" />
-      <workItem from="1608217368254" duration="33000" />
+      <workItem from="1608217368254" duration="141000" />
+      <workItem from="1608244788540" duration="6019000" />
     </task>
     <task id="LOCAL-00001" summary="has problem">
       <created>1608164774630</created>
@@ -171,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608164774630</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="resolve not login problem">
+      <created>1608217462729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608217462729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,69 +365,79 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="has problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="has problem" />
+    <MESSAGE value="resolve not login problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolve not login problem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1608162017406">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1608162017406" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1608163967988">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608250889507">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1608163967988" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1608250889507" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1608250096930">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1608250096930" />
     <state x="388" y="95" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1608075023674">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="388" y="95" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.834@0.0.1536.834" timestamp="1608075023674" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1608075273366">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1608250822075">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608075273366" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1608164839979">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608250822075" />
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1608246935708">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1608164839979">
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608246935708" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1608246935707">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1608164839979">
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608246935707" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1608246935706">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1608164839979">
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608246935706" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1608246935707">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1608164839979">
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608246935707" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1608246026830">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1608164839979">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1608246026830">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1608164839979">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1608246026830">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1608164839979">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1608246026830">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608164839979" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1608162843938">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1608162843938" />
-    <state x="361" y="137" key="Vcs.Push.Dialog.v2" timestamp="1608164776743">
+    <state x="361" y="137" key="Vcs.Push.Dialog.v2" timestamp="1608217468786">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="137" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1608164776743" />
-    <state x="178" y="78" key="new project wizard" timestamp="1608075480611">
+    <state x="361" y="137" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1608217468786" />
+    <state x="178" y="78" key="new project wizard" timestamp="1608246882693">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="178" y="78" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1608075480611" />
+    <state x="178" y="78" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1608246882693" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608247315093">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608247315093" />
   </component>
 </project>

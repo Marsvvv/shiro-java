@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shiro-java" />
         <module name="shiro-day01-04hash" />
+        <module name="shiro-day01-07web" />
         <module name="shiro-day01-01authenticator" />
+        <module name="shiro-day01-06authentication-realm" />
         <module name="shiro-day01-02realm" />
         <module name="shiro-day01-03encode-decode" />
         <module name="shiro-day01-05ciphertext-realm" />
@@ -20,6 +21,8 @@
       <module name="shiro-day01-03encode-decode" target="8" />
       <module name="shiro-day01-04hash" target="8" />
       <module name="shiro-day01-05ciphertext-realm" target="8" />
+      <module name="shiro-day01-06authentication-realm" target="8" />
+      <module name="shiro-day01-07web" target="1.7" />
       <module name="shiro-java" target="1.5" />
     </bytecodeTargetLevel>
   </component>
