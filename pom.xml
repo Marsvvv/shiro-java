@@ -17,5 +17,6 @@
         <module>shiro-day01-05ciphertext-realm</module>
         <module>shiro-day01-06authentication-realm</module>
         <module>shiro-day01-07web</module>
+        <module>shiro-day01-08web-java</module>
     </modules>
 </project>

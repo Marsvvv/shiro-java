@@ -23,14 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38992326-2119-410c-bac1-4fd8fbcb8451" name="Default Changelist" comment="resolve not login problem">
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LogoutSerlvet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LogoutSerlvet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderAddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderDelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderDelServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/realm/DefinitionRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/service/impl/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/util/EncodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/web/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/web/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/web/LogoutSerlvet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/web/OrderAddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/web/OrderDelServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/java/org/shiro/web/OrderListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/resources/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/webapp/order-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-day01-08web-java/src/main/webapp/order-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +87,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BaiduNetdiskDownload/shiro权限框架资料/课程代码/shiro-day01-07web/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shiro-day01-08web-java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,27 +98,27 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2954023" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../BaiduNetdiskDownload/shiro权限框架资料/课程代码/shiro-day01-07web/pom.xml" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../BaiduNetdiskDownload/shiro权限框架资料/课程代码/shiro-day01-07web/src/main/webapp/login.jsp" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\shiro-java\shiro-day01-07web\src\main\webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.shiro.service.impl" />
+      <recent name="org.shiro.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\shiro-java" />
       <recent name="D:\shiro-java\shiro-day01-07web\src\main\webapp" />
       <recent name="D:\shiro-java\shiro-day01-07web\src\main\resources" />
       <recent name="D:\shiro-java\shiro-day01-07web\src\main\java\org\shiro" />
-      <recent name="D:\shiro-java" />
       <recent name="D:\shiro-java\shiro-day01-05ciphertext-realm\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\shiro-java\shiro-day01-07web\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.shiro.web" />
       <recent name="org.shiro" />
       <recent name="org.shiro.realm" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.shiro.service.impl" />
-      <recent name="org.shiro.service" />
     </key>
   </component>
   <component name="RunManager">
@@ -143,7 +158,7 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="shiro-day01-07web [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="shiro-day01-08web-java [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -162,7 +177,7 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/shiro-day01-07web" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/shiro-day01-08web-java" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
