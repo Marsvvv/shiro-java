@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "logout")
+@WebServlet(urlPatterns = "/logout")
 public class LogoutSerlvet extends HttpServlet {
 
     LoginService loginService = new LoginServiceImpl();

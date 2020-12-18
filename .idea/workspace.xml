@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,66 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38992326-2119-410c-bac1-4fd8fbcb8451" name="Default Changelist" comment="resolve not login problem">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shiro_day01_07web_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shiro_day01_07web_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/shiro-day01-06authentication-realm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/realm/DefinitionRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/service/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/service/SecurityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/java/org/shiro/util/EncodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/main/resources/shiro.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/src/test/java/org/shiro/TestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/DigestUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/EncodeUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/realm/DefinitionRealm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/service/SecurityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/service/SecurityServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/util/DigestUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/org/shiro/util/EncodeUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/classes/shiro.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-06authentication-realm/target/test-classes/org/shiro/TestApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/shiro-day01-07web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/TestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/realm/DefinitionRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/service/impl/SecurityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/util/DigestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/util/EncodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LogoutSerlvet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderDelServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/resources/shiro.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/order-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/order-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/classes/org/shiro/util/DigestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-05ciphertext-realm/target/classes/org/shiro/util/DigestUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LogoutSerlvet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/LogoutSerlvet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderDelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderDelServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/java/org/shiro/web/OrderListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-day01-07web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +53,6 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -122,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shiro-day01-07web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BaiduNetdiskDownload/shiro权限框架资料/课程代码/shiro-day01-07web/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -133,6 +83,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2954023" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../BaiduNetdiskDownload/shiro权限框架资料/课程代码/shiro-day01-07web/pom.xml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -156,18 +107,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="TestApplication.hexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro-day01-04hash" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.shiro.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.shiro" />
-      <option name="MAIN_CLASS_NAME" value="org.shiro.TestApplication" />
-      <option name="METHOD_NAME" value="hexTest" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -369,75 +315,5 @@
     <MESSAGE value="has problem" />
     <MESSAGE value="resolve not login problem" />
     <option name="LAST_COMMIT_MESSAGE" value="resolve not login problem" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1608162017406">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1608162017406" />
-    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608250889507">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1608250889507" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1608250096930">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1608250096930" />
-    <state x="388" y="95" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1608075023674">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="388" y="95" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.834@0.0.1536.834" timestamp="1608075023674" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1608250822075">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608250822075" />
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1608246935708">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608246935708" />
-    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1608246935707">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608246935707" />
-    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1608246935706">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608246935706" />
-    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1608246935707">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608246935707" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1608246026830">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1608246026830">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1608246026830">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1608246026830">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608246026830" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1608162843938">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1608162843938" />
-    <state x="361" y="137" key="Vcs.Push.Dialog.v2" timestamp="1608217468786">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="137" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1608217468786" />
-    <state x="178" y="78" key="new project wizard" timestamp="1608246882693">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="178" y="78" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1608246882693" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608247315093">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608247315093" />
   </component>
 </project>

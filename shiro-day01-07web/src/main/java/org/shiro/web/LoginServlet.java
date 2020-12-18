@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "login")
+@WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
 
     LoginService loginService = new LoginServiceImpl();
@@ -37,7 +37,7 @@ public class LoginServlet extends HttpServlet {
         if (login) {
             req.getRequestDispatcher("/home").forward(req, resp);
         } else {
-            resp.sendRedirect("/login.jsp");
+            resp.sendRedirect("login.jsp");
         }
 
     }
