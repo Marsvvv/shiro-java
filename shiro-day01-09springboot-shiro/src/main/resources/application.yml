@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.111.91.200:3306/shiro-java?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+server:
+  port: 8080
