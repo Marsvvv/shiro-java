@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "order-list")
+@WebServlet(urlPatterns = "/order-list")
 public class OrderListServlet extends HttpServlet {
 
     @Override
@@ -17,6 +17,6 @@ public class OrderListServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("order-list").forward(req, resp);
+        req.getRequestDispatcher("order-list.jsp").forward(req, resp);
     }
 }
