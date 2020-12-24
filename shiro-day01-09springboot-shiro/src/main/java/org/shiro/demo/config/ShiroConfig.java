@@ -143,6 +143,6 @@ public class ShiroConfig {
 
     private Map<String, String> filterChainDefinitionMap() {
         Properties properties = PropertiesUtils.readProperties("/authentication.properties");
-        return PropertiesUtils.Properties2Map(properties);
+        return PropertiesUtils.properties2Map(properties);
     }
 }

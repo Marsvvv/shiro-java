@@ -37,7 +37,7 @@ public class PropertiesUtils {
      * @param properties properties
      * @return Map
      */
-    public static Map<String, String> Properties2Map(Properties properties) {
+    public static Map<String, String> properties2Map(Properties properties) {
         Map<String, String> map = new HashMap<>(properties.entrySet().size());
         for (Map.Entry<Object, Object> entry : properties.entrySet()) {
             map.put(entry.getKey().toString(), entry.getValue().toString());
