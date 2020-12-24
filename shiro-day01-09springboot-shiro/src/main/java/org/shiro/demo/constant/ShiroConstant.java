@@ -7,7 +7,7 @@
  * 2017年11月17日  下午1:36:42
  */
 
-package com.itheima.shiro.constant;
+package org.shiro.demo.constant;
 
 
 

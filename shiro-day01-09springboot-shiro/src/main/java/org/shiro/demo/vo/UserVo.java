@@ -7,9 +7,10 @@
  * 2017年11月9日  上午10:13:25
  */
 
-package com.itheima.shiro.vo;
+package org.shiro.demo.vo;
 
-import com.itheima.shiro.pojo.User;
+import lombok.Data;
+import org.shiro.demo.entity.User;
 
 /**
  * <b>类名：</b>UserVo.java<br>
@@ -21,9 +22,8 @@ import com.itheima.shiro.pojo.User;
  * @author <font color='blue'>束文奇</font>
  * @version 1.0.1
  * @date 2017年11月9日 上午10:13:25
- * @Description
  */
-
+@Data
 public class UserVo extends User {
 
     /**
@@ -40,21 +40,4 @@ public class UserVo extends User {
      * 零时密码
      **/
     private String plainPassword;
-
-    public String getHasRoleIds() {
-        return hasRoleIds;
-    }
-
-    public void setHasRoleIds(String hasRoleIds) {
-        this.hasRoleIds = hasRoleIds == null ? null : hasRoleIds.trim();
-    }
-
-    public String getPlainPassword() {
-        return plainPassword;
-    }
-
-    public void setPlainPassword(String plainPassword) {
-        this.plainPassword = plainPassword == null ? null : plainPassword.trim();
-    }
-
 }

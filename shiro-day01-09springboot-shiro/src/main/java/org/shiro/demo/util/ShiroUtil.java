@@ -7,7 +7,7 @@
  * 2017-10-11  下午2:28:25
  */
 
-package com.itheima.shiro.utils;
+package org.shiro.demo.util;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;

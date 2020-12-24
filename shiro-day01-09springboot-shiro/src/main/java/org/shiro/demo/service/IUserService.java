@@ -2,6 +2,9 @@ package org.shiro.demo.service;
 
 import org.shiro.demo.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.shiro.demo.vo.LoginVo;
+
+import java.util.Map;
 
 /**
  * <p>
@@ -20,4 +23,11 @@ public interface IUserService extends IService<User> {
      * @return 用户信息
      */
     User findUserByLoginName(String loginName);
+
+    /**
+     * 登录操作
+     *
+     * @param loginVo loginVo
+     */
+    Map<String, String> login(LoginVo loginVo);
 }

@@ -7,9 +7,11 @@
  * 2017年11月8日  下午4:11:02
  */
 
-package com.itheima.shiro.vo;
+package org.shiro.demo.vo;
 
-import com.itheima.shiro.pojo.Role;
+
+import lombok.Data;
+import org.shiro.demo.entity.Role;
 
 /**
  * <b>类名：</b>RoleVo.java<br>
@@ -17,27 +19,22 @@ import com.itheima.shiro.pojo.Role;
  * <p><b>描述：</b>意真（上海）金融统一构建系统</p>
  * <p><b>版权声明：</b>Copyright (c) 2017</p>
  * <p><b>公司：</b>意真（上海）金融信息服务有限公司 </p>
- * @author <font color='blue'>束文奇</font> 
+ *
+ * @author <font color='blue'>束文奇</font>
  * @version 1.0.1
- * @date  2017年11月8日 下午4:11:02
+ * @date 2017年11月8日 下午4:11:02
  * @Description 角色vo
  */
-
+@Data
 public class RoleVo extends Role {
-	
-	/** serialVersionUID */
-	private static final long serialVersionUID = -8242413497560284592L;
-	
-	/**是否拥有资源**/
-	private String hasResourceIds;
 
-	public String getHasResourceIds() {
-		return hasResourceIds;
-	}
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = -8242413497560284592L;
 
-	public void setHasResourceIds(String hasResourceIds) {
-		this.hasResourceIds = hasResourceIds == null ? null : hasResourceIds.trim();
-	}
-	
-	
+    /**
+     * 是否拥有资源
+     **/
+    private String hasResourceIds;
 }
