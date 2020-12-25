@@ -38,4 +38,13 @@ public class TreeVo {
     private Boolean isParent = Boolean.TRUE;
 
     private Boolean open = Boolean.FALSE;
+
+    public TreeVo(String id, String pId, String name) {
+        this.id = id;
+        this.pId = pId;
+        this.name = name;
+    }
+
+    public TreeVo() {
+    }
 }

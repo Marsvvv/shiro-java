@@ -1,5 +1,7 @@
 package org.shiro.demo.mapper;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Param;
 import org.shiro.demo.entity.Resource;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -23,4 +25,18 @@ public interface ResourceMapper extends BaseMapper<Resource> {
      * @return 资源列表
      */
     List<Resource> findResourcesByUserId(@Param("userId") String userId);
+
+    /**
+     * 资源多条件查询
+     *
+     * @param page         page
+     * @param parentId     parentId
+     * @param resourceName resourceName
+     * @param label        label
+     * @param requestPath  requestPath
+     * @return IPage<Resource>
+     */
+    IPage<Resource> findResourceList(Page<Resource> page, @Param("parentId") String parentId,
+                                     @Param("resourceName") String resourceName, @Param("label") String label,
+                                     @Param("requestPath") String requestPath);
 }
