@@ -157,3 +157,37 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2020-12-24 14:40:59 -Starting ShiroDay0109springbootShiroApplication using Java 1.8.0_271 on asus-PC with PID 7896 (D:\shiro-java\shiro-day01-09springboot-shiro\target\classes started by asus in D:\shiro-java\shiro-day01-09springboot-shiro)
+2020-12-24 14:40:59 -No active profile set, falling back to default profiles: default
+2020-12-24 14:41:00 -Bean 'shiroConfig' of type [org.shiro.demo.config.ShiroConfig$$EnhancerBySpringCGLIB$$c4ac43c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:00 -Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:00 -Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$c152676e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:00 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:00 -Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:00 -Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'resourceMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'resourceMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'roleMapper' of type [com.sun.proxy.$Proxy57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'userMapper' of type [com.sun.proxy.$Proxy59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'userService' of type [org.shiro.demo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'userBridgeService' of type [org.shiro.demo.core.bridge.impl.UserBridgeServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'shiroDbRealm' of type [org.shiro.demo.core.impl.ShiroDbRealmImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'simpleCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 14:41:01 -Tomcat initialized with port(s): 8090 (http)
+2020-12-24 14:41:01 -Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-24 14:41:01 -Starting service [Tomcat]
+2020-12-24 14:41:01 -Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-24 14:41:01 -Initializing Spring embedded WebApplicationContext
+2020-12-24 14:41:01 -Root WebApplicationContext: initialization completed in 2195 ms
+2020-12-24 14:41:02 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 14:41:02 -Starting ProtocolHandler ["http-nio-8090"]
+2020-12-24 14:41:02 -Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-24 14:41:02 -Started ShiroDay0109springbootShiroApplication in 3.876 seconds (JVM running for 4.83)
+2020-12-24 18:02:15 -Shutting down ExecutorService 'applicationTaskExecutor'
