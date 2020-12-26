@@ -3,12 +3,11 @@ package org.shiro.demo.service.impl;
 import org.shiro.demo.constant.ResourceConstant;
 import org.shiro.demo.constant.SuperConstant;
 import org.shiro.demo.entity.Resource;
-import org.shiro.demo.mapper.MenusServiceMapper;
+import org.shiro.demo.mapper.MenuMapper;
 import org.shiro.demo.service.IMenuService;
 import org.shiro.demo.util.CnCalendarUtil;
 import org.shiro.demo.util.ShiroUserUtil;
 import org.shiro.demo.vo.MenuVo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -22,19 +21,13 @@ public class MenuServiceImpl implements IMenuService {
     private String systemCode;
 
     @javax.annotation.Resource
-    private MenusServiceMapper menusServiceMapper;
+    private MenuMapper menuMapper;
 
     @Override
     public List<Resource> findTopLevel() {
-        Map<String, Object> values = new HashMap<String, Object>();
-        values.put("resourceType", ResourceConstant.MENU);
-        values.put("resourceIdList", ShiroUserUtil.getShiroUser().getResourceIds());
-        values.put("isSystemRoot", SuperConstant.YES);
-        values.put("enableFlag", SuperConstant.YES);
-        values.put("systemCode", systemCode);
-        return menusServiceMapper.findTopLevel(values);
+        return menuMapper.findTopLevel(ShiroUserUtil.getShiroUser().getResourceIds(), ResourceConstant.MENU
+                , SuperConstant.YES, SuperConstant.YES, systemCode);
     }
-
 
     @Override
     public List<MenuVo> findByResourceType(String parentId) {
@@ -45,10 +38,12 @@ public class MenuServiceImpl implements IMenuService {
         values.put("resourceIdList", ShiroUserUtil.getShiroUser().getResourceIds());
         values.put("systemCode", systemCode);
         values.put("enableFlag", SuperConstant.YES);
-        List<MenuVo> list = menusServiceMapper.findByResourceType(values);
+        List<MenuVo> list = menuMapper.findByResourceType(ShiroUserUtil.getShiroUser().getResourceIds(), ResourceConstant.MENU,
+                parentId, SuperConstant.YES, systemCode);
         for (int i = 0; i < list.size(); i++) {
             values.put("parentId", list.get(i).getMenuid());
-            List<MenuVo> iterableChildren = menusServiceMapper.findByResourceType(values);
+            List<MenuVo> iterableChildren = menuMapper.findByResourceType(ShiroUserUtil.getShiroUser().getResourceIds(), ResourceConstant.MENU,
+                    list.get(i).getMenuid(), SuperConstant.YES, systemCode);
             list.get(i).setMenus(iterableChildren);
         }
         return list;

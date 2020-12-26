@@ -33,78 +33,11 @@ import java.util.*;
  */
 @Slf4j
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private IUserService iUserService;
-
-    @GetMapping("/")
-    public ModelAndView loginPage() {
-        return new ModelAndView("/account/login");
-    }
-
-    @PostMapping("/usersLongin")
-    public ModelAndView login(LoginVo loginVo) {
-        ModelAndView modelAndView = new ModelAndView("/account/login");
-        String shiroLoginFailure = null;
-        Map<String, String> map = new HashMap<String, String>();
-        try {
-            loginVo.setSystemCode(ShiroConstant.PLATFORM_MGT);
-            iUserService.login(loginVo);
-        } catch (UnknownAccountException ex) {
-            log.error("登陆异常:{}", ex);
-            shiroLoginFailure = "登录失败 - 账号不存在！";
-            map.put("loginName", loginVo.getLoginName());
-            map.put("shiroLoginFailure", shiroLoginFailure);
-            modelAndView.addAllObjects(map);
-        } catch (IncorrectCredentialsException ex) {
-            log.error("登陆异常:{}", ex);
-            shiroLoginFailure = "登录失败 - 密码不正确！";
-            map.put("shiroLoginFailure", shiroLoginFailure);
-            map.put("loginName", loginVo.getLoginName());
-            modelAndView.addAllObjects(map);
-        } catch (Exception ex) {
-            log.error("登陆异常:{}", ex);
-            shiroLoginFailure = "登录失败 - 请联系平台管理员！";
-            map.put("shiroLoginFailure", shiroLoginFailure);
-            map.put("loginName", loginVo.getLoginName());
-            modelAndView.addAllObjects(map);
-        }
-        if (shiroLoginFailure != null) {
-            return modelAndView;
-        }
-        modelAndView.setViewName("redirect:/menus/system");
-        return modelAndView;
-    }
-
-    @GetMapping("/usersLongout")
-    public String usersLongout() {
-        Subject subject = SecurityUtils.getSubject();
-        if (subject != null) {
-            subject.logout();
-        }
-        return "/account/login";
-    }
-
-    /**
-     * 编辑密码
-     */
-    @RequestMapping(value = "/editorpassword")
-    public ModelAndView editorPassword() {
-        return new ModelAndView("/user/user-editor-password");
-    }
-
-    /**
-     * 保存新密码
-     */
-    @RequestMapping(value = "/saveNewPassword")
-    @ResponseBody
-    public Boolean saveNewPassword(String oldPassword, String plainPassword) {
-        return iUserService.saveNewPassword(oldPassword, plainPassword);
-    }
-
-    //  =====登录后
 
     /**
      * 初始化列表

@@ -11,6 +11,7 @@ import org.shiro.demo.service.IRoleService;
 import org.shiro.demo.vo.ComboboxVo;
 import org.shiro.demo.vo.RoleVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,7 +30,7 @@ import java.util.List;
  * @author yjw
  * @since 2020-12-22
  */
-@RestController
+@Controller
 @RequestMapping("/role")
 public class RoleController {
 

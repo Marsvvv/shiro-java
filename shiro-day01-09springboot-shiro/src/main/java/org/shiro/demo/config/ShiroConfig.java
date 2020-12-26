@@ -6,6 +6,7 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import org.shiro.demo.core.ShiroDbRealm;
 import org.shiro.demo.core.impl.ShiroDbRealmImpl;
 import org.shiro.demo.properties.PropertiesUtils;
@@ -15,6 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
@@ -142,7 +144,20 @@ public class ShiroConfig {
     }
 
     private Map<String, String> filterChainDefinitionMap() {
-        Properties properties = PropertiesUtils.readProperties("/authentication.properties");
-        return PropertiesUtils.properties2Map(properties);
+//        Properties properties = PropertiesUtils.readProperties("/authentication.properties");
+//        return PropertiesUtils.properties2Map(properties);
+        HashMap<String, String> map = new HashMap<>(3);
+        map.put("/static/**", "anon");
+        map.put("/login/**", "anon");
+        map.put("/**", "authc");
+        return map;
+    }
+
+    public static void main(String[] args) {
+        HashMap<String, String> map = new HashMap<>(3);
+        map.put("/static/**", "anon");
+        map.put("/login/**", "anon");
+        map.put("/**", "authc");
+        System.out.println(map);
     }
 }

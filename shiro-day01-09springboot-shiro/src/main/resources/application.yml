@@ -9,10 +9,16 @@ spring:
     view:
       prefix: /WEB-INF/views
       suffix: .jsp
-server:
+    # 只有静态资源满足什么样的匹配条件，Spring Boot才会处理静态资源请求
+    static-path-pattern: /static/**
+# 告诉Spring Boot应该在何处查找静态资源文件，这是一个列表性的配置，查找文件时会依赖于配置的先后顺序依次进行
+# resources:
+#   static-locations=classpath:/static,classpath:/public,classpath:/resources,classpath:/META-INF/resources:server:
   port: 8080
+  servlet:
+    context-path: /shiro
 logging:
   config: classpath:logback-spring.xml
 myshiro:
   resource:
-    systemcode: shiro-mgt
+    systemcode: shiro-mgtt

@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.junit.jupiter.api.Test;
+import org.shiro.demo.util.DigestUtil;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
@@ -115,6 +116,12 @@ class ShiroDay0109springbootShiroApplicationTests {
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
 
+    }
+
+    @Test
+    public void sha1() {
+        String s = DigestUtil.sha1("123", "0bfb3baa6dca9bcf");
+        System.out.println(s);
     }
 
 }

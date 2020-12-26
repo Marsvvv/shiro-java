@@ -10,6 +10,7 @@ import org.shiro.demo.service.IResourceService;
 import org.shiro.demo.vo.TreeVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +30,7 @@ import java.util.List;
  * @since 2020-12-22
  */
 @Slf4j
-@RestController
+@Controller
 @RequestMapping("/resource")
 public class ResourceController {
 
