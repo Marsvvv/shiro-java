@@ -28,7 +28,7 @@ public class PropertiesUtils {
         }
         return properties;
     }*/
-    public static Properties readProperties(String path) {
+    public static LinkedProperties readProperties(String path) {
         LinkedProperties properties = new LinkedProperties();
         try (
                 InputStream inputStream = PropertiesUtils.class.getResourceAsStream(path);

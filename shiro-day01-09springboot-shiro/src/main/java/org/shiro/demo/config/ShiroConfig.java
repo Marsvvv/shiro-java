@@ -6,9 +6,10 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import org.shiro.demo.core.ShiroDbRealm;
+import org.shiro.demo.core.filter.CustomFilter;
 import org.shiro.demo.core.impl.ShiroDbRealmImpl;
+import org.shiro.demo.properties.LinkedProperties;
 import org.shiro.demo.properties.PropertiesUtils;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.context.annotation.Bean;
@@ -16,10 +17,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
+import javax.servlet.Filter;
+import java.util.*;
 
+/**
+ * @author asus
+ */
 @Configuration
 @ComponentScan(basePackages = "org.shiro.demo.core")
 public class ShiroConfig {
@@ -132,8 +135,8 @@ public class ShiroConfig {
     public ShiroFilterFactoryBean shiroFilterFactoryBean() {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager());
-        //  过滤器
-
+        //  自定义过滤器
+        shiroFilterFactoryBean.setFilters(customFilterMap());
         //  过滤器链
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap());
         //  设置登录地址
@@ -143,21 +146,25 @@ public class ShiroConfig {
         return shiroFilterFactoryBean;
     }
 
-    private Map<String, String> filterChainDefinitionMap() {
-//        Properties properties = PropertiesUtils.readProperties("/authentication.properties");
-//        return PropertiesUtils.properties2Map(properties);
-        HashMap<String, String> map = new HashMap<>(3);
-        map.put("/static/**", "anon");
-        map.put("/login/**", "anon");
-        map.put("/**", "authc");
+    private Map<String, Filter> customFilterMap() {
+        Map<String, Filter> map = new HashMap<>(1);
+        map.put("roles-or", new CustomFilter());
         return map;
     }
 
-    public static void main(String[] args) {
-        HashMap<String, String> map = new HashMap<>(3);
-        map.put("/static/**", "anon");
-        map.put("/login/**", "anon");
-        map.put("/**", "authc");
-        System.out.println(map);
+    /**
+     * 过滤器链，从配置文件中读取 url 和 权限
+     *
+     * @return map
+     */
+    private Map<String, String> filterChainDefinitionMap() {
+        LinkedProperties properties = PropertiesUtils.readProperties("/authentication.properties");
+        List<Object> keyList = properties.getKeyList();
+        Map<String, String> map = new LinkedHashMap<>(properties.entrySet().size());
+
+        for (Object obj : keyList) {
+            map.put(obj.toString(), properties.get(obj).toString());
+        }
+        return map;
     }
 }

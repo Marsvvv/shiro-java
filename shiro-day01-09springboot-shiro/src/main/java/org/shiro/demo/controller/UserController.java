@@ -17,6 +17,7 @@ import org.shiro.demo.service.IUserService;
 import org.shiro.demo.vo.LoginVo;
 import org.shiro.demo.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -32,7 +33,7 @@ import java.util.*;
  * @since 2020-12-22
  */
 @Slf4j
-@RestController
+@Controller
 @RequestMapping("/user")
 public class UserController {
 
@@ -50,7 +51,7 @@ public class UserController {
     /**
      * list(分页列表)
      */
-    @GetMapping(value = "/list")
+    @PostMapping(value = "/list")
     @ResponseBody
     public ModelMap list(UserVo userVo, Integer rows, Integer page) {
         IPage<User> iPage = iUserService.findUserList(userVo, rows, page);
