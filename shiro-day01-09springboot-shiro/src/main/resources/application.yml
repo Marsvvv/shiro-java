@@ -20,3 +20,5 @@ logging:
 myshiro:
   resource:
     systemcode: shiro-mgt
+  redis:
+
