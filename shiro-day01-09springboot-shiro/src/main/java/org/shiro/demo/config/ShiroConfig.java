@@ -1,5 +1,6 @@
 package org.shiro.demo.config;
 
+import lombok.extern.log4j.Log4j2;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -16,14 +17,11 @@ import org.shiro.demo.properties.LinkedProperties;
 import org.shiro.demo.properties.PropertiesUtils;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
-import org.springframework.core.annotation.Order;
 
 import javax.servlet.Filter;
 import java.util.HashMap;
@@ -37,11 +35,11 @@ import java.util.Map;
  */
 @Configuration
 @ComponentScan(basePackages = "org.shiro.demo.core")
-@EnableConfigurationProperties(ShiroRedisProperties.class)
+@EnableConfigurationProperties({ShiroRedisProperties.class})
 public class ShiroConfig {
 
     @Autowired
-    ShiroRedisProperties shiroRedisProperties;
+    private ShiroRedisProperties shiroRedisProperties;
 
     /**
      * 为什么要使用缓存 Realm
@@ -52,35 +50,31 @@ public class ShiroConfig {
      * @return RedissonClient
      */
     @Bean("redissonClientForShiro")
-    public RedissonClient redissonClient() {
-        //  获取当前redis节点信息
+    public RedissonClient redissonClient(){
+        //获取当前redis节点信息
         String[] nodes = shiroRedisProperties.getNodes().split(",");
-
-        Config config;
-
-        if (nodes.length == 1) {
-            config = new Config();
-            //  单机redis操作
+        //创建配置信息：1、单机redis配置 2、集群redis配置
+        Config config = new Config();
+        if (nodes.length==1){
+            //1、单机redis配置
             config.useSingleServer().setAddress(nodes[0])
+                    .setConnectTimeout(shiroRedisProperties.getConnectTimeout())
                     .setConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
                     .setConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
-                    .setTimeout(shiroRedisProperties.getTimeout())
-                    .setConnectTimeout(shiroRedisProperties.getConnectTimeout());
-        } else if (nodes.length > 1) {
-            config = new Config();
-            //  集群redis操作
+                    .setTimeout(shiroRedisProperties.getTimeout());
+        }else if(nodes.length>1) {
+            //2、集群redis配置
             config.useClusterServers().addNodeAddress(nodes)
+                    .setConnectTimeout(shiroRedisProperties.getConnectTimeout())
                     .setMasterConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
-                    .setSlaveConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
                     .setMasterConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
-                    .setSlaveConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
-                    .setTimeout(shiroRedisProperties.getTimeout())
-                    .setConnectTimeout(shiroRedisProperties.getConnectTimeout());
-        } else {
+                    .setTimeout(shiroRedisProperties.getTimeout());
+        }else {
             return null;
         }
-        //  将redission客户端交给spring管理
-        return Redisson.create(config);
+        //创建redission的客户端，交于spring管理
+        RedissonClient client = Redisson.create(config);
+        return client;
     }
 
     /**
@@ -151,8 +145,8 @@ public class ShiroConfig {
      *
      * @return LifecycleBeanPostProcessor
      */
-    @Bean
-    public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
+    @Bean(name = "lifecycleBeanPostProcessor")
+    public static LifecycleBeanPostProcessor getLifecycleBeanPostProcessor() {
         return new LifecycleBeanPostProcessor();
     }
 

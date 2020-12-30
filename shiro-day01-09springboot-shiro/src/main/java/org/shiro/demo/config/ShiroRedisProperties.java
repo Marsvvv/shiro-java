@@ -1,8 +1,7 @@
 package org.shiro.demo.config;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 import java.io.Serializable;
 
@@ -13,9 +12,8 @@ import java.io.Serializable;
  *
  * @author asus
  */
-@Configuration
+@Data
 @ConfigurationProperties(prefix = "custom.redis")
-@PropertySource("classpath:application.yml")
 public class ShiroRedisProperties implements Serializable {
 
     /**
@@ -43,43 +41,4 @@ public class ShiroRedisProperties implements Serializable {
      */
     private int timeout;
 
-    public String getNodes() {
-        return nodes;
-    }
-
-    public void setNodes(String nodes) {
-        this.nodes = nodes;
-    }
-
-    public int getConnectTimeout() {
-        return connectTimeout;
-    }
-
-    public void setConnectTimeout(int connectTimeout) {
-        this.connectTimeout = connectTimeout;
-    }
-
-    public int getConnectPoolSize() {
-        return connectPoolSize;
-    }
-
-    public void setConnectPoolSize(int connectPoolSize) {
-        this.connectPoolSize = connectPoolSize;
-    }
-
-    public int getConnectionMinimumidleSize() {
-        return connectionMinimumidleSize;
-    }
-
-    public void setConnectionMinimumidleSize(int connectionMinimumidleSize) {
-        this.connectionMinimumidleSize = connectionMinimumidleSize;
-    }
-
-    public int getTimeout() {
-        return timeout;
-    }
-
-    public void setTimeout(int timeout) {
-        this.timeout = timeout;
-    }
 }
