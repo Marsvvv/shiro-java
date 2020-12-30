@@ -16,11 +16,14 @@ import org.shiro.demo.properties.LinkedProperties;
 import org.shiro.demo.properties.PropertiesUtils;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
+import org.springframework.core.annotation.Order;
 
 import javax.servlet.Filter;
 import java.util.HashMap;
@@ -37,12 +40,8 @@ import java.util.Map;
 @EnableConfigurationProperties(ShiroRedisProperties.class)
 public class ShiroConfig {
 
-    private final ShiroRedisProperties shiroRedisProperties;
-
     @Autowired
-    public ShiroConfig(ShiroRedisProperties shiroRedisProperties) {
-        this.shiroRedisProperties = shiroRedisProperties;
-    }
+    ShiroRedisProperties shiroRedisProperties;
 
     /**
      * 为什么要使用缓存 Realm
@@ -52,29 +51,29 @@ public class ShiroConfig {
      *
      * @return RedissonClient
      */
-    @Bean
+    @Bean("redissonClientForShiro")
     public RedissonClient redissonClient() {
         //  获取当前redis节点信息
         String[] nodes = shiroRedisProperties.getNodes().split(",");
 
-        Config config = null;
+        Config config;
 
         if (nodes.length == 1) {
             config = new Config();
             //  单机redis操作
             config.useSingleServer().setAddress(nodes[0])
-                    .setConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMaximumidleSize())
-                    .setConnectionPoolSize(shiroRedisProperties.getCountPoolSize())
+                    .setConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
+                    .setConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
                     .setTimeout(shiroRedisProperties.getTimeout())
                     .setConnectTimeout(shiroRedisProperties.getConnectTimeout());
         } else if (nodes.length > 1) {
             config = new Config();
             //  集群redis操作
             config.useClusterServers().addNodeAddress(nodes)
-                    .setMasterConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMaximumidleSize())
-                    .setSlaveConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMaximumidleSize())
-                    .setMasterConnectionPoolSize(shiroRedisProperties.getCountPoolSize())
-                    .setSlaveConnectionPoolSize(shiroRedisProperties.getCountPoolSize())
+                    .setMasterConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
+                    .setSlaveConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
+                    .setMasterConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
+                    .setSlaveConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
                     .setTimeout(shiroRedisProperties.getTimeout())
                     .setConnectTimeout(shiroRedisProperties.getConnectTimeout());
         } else {

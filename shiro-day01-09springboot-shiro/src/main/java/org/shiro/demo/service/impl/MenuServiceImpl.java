@@ -17,7 +17,7 @@ import java.util.*;
 @Service
 public class MenuServiceImpl implements IMenuService {
 
-    @Value("${myshiro.resource.systemcode}")
+    @Value("${custom.resource.systemCode}")
     private String systemCode;
 
     @javax.annotation.Resource

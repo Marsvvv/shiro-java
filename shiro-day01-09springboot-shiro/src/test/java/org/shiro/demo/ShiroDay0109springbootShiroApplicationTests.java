@@ -8,14 +8,28 @@ import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.junit.jupiter.api.Test;
+import org.shiro.demo.config.ShiroRedisProperties;
 import org.shiro.demo.util.DigestUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest
+@EnableConfigurationProperties(ShiroRedisProperties.class)
 class ShiroDay0109springbootShiroApplicationTests {
+
+    @Autowired
+    ShiroRedisProperties shiroRedisProperties;
+
+    /**
+     * redis连接地址
+     */
+    @Value("${node}")
+    private String node;
 
     @Test
     void generator() {
@@ -124,4 +138,8 @@ class ShiroDay0109springbootShiroApplicationTests {
         System.out.println(s);
     }
 
+    @Test
+    public void testaa() {
+        System.out.println("node" + shiroRedisProperties);
+    }
 }
