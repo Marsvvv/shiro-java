@@ -53,7 +53,7 @@ public class UserBridgeServiceImpl implements UserBridgeService {
             return (User) cache.get(key);
         }
         User user = userService.findUserByLoginName(loginName);
-        if (BeanUtil.isEmpty(user)) {
+        if (BeanUtil.isNotEmpty(user)) {
             Map<Object, Object> map = new HashMap<>(1);
             map.put(key, user);
             SimpleMapCache mapCache = new SimpleMapCache(key, map);

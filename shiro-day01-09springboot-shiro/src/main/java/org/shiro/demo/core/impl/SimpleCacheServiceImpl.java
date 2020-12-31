@@ -30,7 +30,7 @@ public class SimpleCacheServiceImpl implements SimpleCacheService {
     @Override
     public Cache<Object, Object> getCache(String cacheName) {
         RBucket<Object> bucket = redissonClientForShiro.getBucket(cacheName);
-        return (Cache<Object, Object>) bucket.get();
+        return (Cache<Object, Object>) ShiroRedissionSerialize.deserialize((String) bucket.get());
     }
 
     @Override

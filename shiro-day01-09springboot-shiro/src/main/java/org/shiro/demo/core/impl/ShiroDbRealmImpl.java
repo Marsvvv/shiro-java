@@ -8,12 +8,15 @@ import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+import org.shiro.demo.constant.CacheConstant;
 import org.shiro.demo.constant.CredentialConstant;
 import org.shiro.demo.core.ShiroDbRealm;
+import org.shiro.demo.core.SimpleCacheService;
 import org.shiro.demo.core.base.ShiroUser;
 import org.shiro.demo.core.base.SimpleToken;
 import org.shiro.demo.core.bridge.UserBridgeService;
 import org.shiro.demo.entity.User;
+import org.shiro.demo.util.ShiroUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -23,6 +26,9 @@ public class ShiroDbRealmImpl extends ShiroDbRealm {
 
     @Autowired
     UserBridgeService userBridgeService;
+
+    @Autowired
+    SimpleCacheService simpleCacheService;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -51,5 +57,23 @@ public class ShiroDbRealmImpl extends ShiroDbRealm {
         hashedCredentialsMatcher.setHashIterations(CredentialConstant.HASH_ITERATIONS);
         hashedCredentialsMatcher.setHashAlgorithmName(CredentialConstant.HASH_ALGORITHM);
         setCredentialsMatcher(hashedCredentialsMatcher);
+    }
+
+    /**
+     * 退出登录后清除缓存
+     *
+     * @param principals principals
+     */
+    @Override
+    protected void doClearCache(PrincipalCollection principals) {
+        ShiroUser shiroUser = (ShiroUser) principals.getPrimaryPrincipal();
+        String sessionId = ShiroUtil.getShiroSessionId();
+        String resourceIdsKey = CacheConstant.RESOURCES_KEY_IDS + sessionId;
+        String roleKey = CacheConstant.ROLE_KEY + sessionId;
+        String key = CacheConstant.FIND_USER_BY_LOGINNAME + shiroUser.getLoginName();
+        simpleCacheService.removeCache(roleKey);
+        simpleCacheService.removeCache(resourceIdsKey);
+        simpleCacheService.removeCache(key);
+        super.doClearCache(principals);
     }
 }
