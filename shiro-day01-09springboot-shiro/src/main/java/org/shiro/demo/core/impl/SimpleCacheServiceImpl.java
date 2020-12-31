@@ -6,7 +6,6 @@ import org.redisson.api.RedissonClient;
 import org.shiro.demo.core.SimpleCacheService;
 import org.shiro.demo.util.ShiroRedissionSerialize;
 import org.shiro.demo.util.ShiroUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

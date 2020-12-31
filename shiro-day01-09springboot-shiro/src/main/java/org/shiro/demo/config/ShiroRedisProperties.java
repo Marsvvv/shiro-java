@@ -41,4 +41,8 @@ public class ShiroRedisProperties implements Serializable {
      */
     private int timeout;
 
+    /**
+     * 全局超时时间
+     */
+    private int globalSessionTimeout;
 }

@@ -12,6 +12,7 @@ import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.shiro.demo.core.ShiroDbRealm;
 import org.shiro.demo.core.filter.CustomFilter;
+import org.shiro.demo.core.impl.RedisSessionDao;
 import org.shiro.demo.core.impl.ShiroDbRealmImpl;
 import org.shiro.demo.properties.LinkedProperties;
 import org.shiro.demo.properties.PropertiesUtils;
@@ -41,6 +42,7 @@ public class ShiroConfig {
     @Autowired
     private ShiroRedisProperties shiroRedisProperties;
 
+
     /**
      * 为什么要使用缓存 Realm
      * 因为鉴权在我们的请求占比中非常高，每一次访问请求我们都需要鉴权，访问相应数据库
@@ -50,26 +52,26 @@ public class ShiroConfig {
      * @return RedissonClient
      */
     @Bean("redissonClientForShiro")
-    public RedissonClient redissonClient(){
+    public RedissonClient redissonClient() {
         //获取当前redis节点信息
         String[] nodes = shiroRedisProperties.getNodes().split(",");
         //创建配置信息：1、单机redis配置 2、集群redis配置
         Config config = new Config();
-        if (nodes.length==1){
+        if (nodes.length == 1) {
             //1、单机redis配置
             config.useSingleServer().setAddress(nodes[0])
                     .setConnectTimeout(shiroRedisProperties.getConnectTimeout())
                     .setConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
                     .setConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
                     .setTimeout(shiroRedisProperties.getTimeout());
-        }else if(nodes.length>1) {
+        } else if (nodes.length > 1) {
             //2、集群redis配置
             config.useClusterServers().addNodeAddress(nodes)
                     .setConnectTimeout(shiroRedisProperties.getConnectTimeout())
                     .setMasterConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
                     .setMasterConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
                     .setTimeout(shiroRedisProperties.getTimeout());
-        }else {
+        } else {
             return null;
         }
         //创建redission的客户端，交于spring管理
@@ -114,6 +116,13 @@ public class ShiroConfig {
         return new ShiroDbRealmImpl();
     }
 
+    @Bean("redisSessionDao")
+    public RedisSessionDao redisSessionDao() {
+        RedisSessionDao redisSessionDao = new RedisSessionDao();
+        redisSessionDao.setGlobalSessionTimeout(shiroRedisProperties.getGlobalSessionTimeout());
+        return redisSessionDao;
+    }
+
     /**
      * 会话管理器
      *
@@ -127,6 +136,7 @@ public class ShiroConfig {
         defaultWebSessionManager.setSessionIdCookieEnabled(true);
         //  指定cookie的创建方式
         defaultWebSessionManager.setSessionIdCookie(simpleCookie());
+        defaultWebSessionManager.setSessionDAO(redisSessionDao());
 
         //  关闭会话更新
         defaultWebSessionManager.setSessionValidationSchedulerEnabled(false);
