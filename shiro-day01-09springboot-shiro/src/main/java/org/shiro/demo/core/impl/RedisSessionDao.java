@@ -7,6 +7,7 @@ import org.redisson.api.RBucket;
 import org.redisson.api.RedissonClient;
 import org.shiro.demo.constant.CacheConstant;
 import org.shiro.demo.util.ShiroRedissionSerialize;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.annotation.Resource;
 import java.io.Serializable;
@@ -20,6 +21,7 @@ public class RedisSessionDao extends AbstractSessionDAO {
     @Resource
     RedissonClient redissonClientForShiro;
 
+    @Value("${custom.redis.globalSessionTimeout}")
     private Integer globalSessionTimeout;
 
     /**

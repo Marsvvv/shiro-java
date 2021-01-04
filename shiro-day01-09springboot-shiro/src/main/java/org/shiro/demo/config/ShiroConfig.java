@@ -62,6 +62,7 @@ public class ShiroConfig {
             config.useSingleServer().setAddress(nodes[0])
                     .setConnectTimeout(shiroRedisProperties.getConnectTimeout())
                     .setConnectionMinimumIdleSize(shiroRedisProperties.getConnectionMinimumidleSize())
+                    .setPingConnectionInterval(1000)
                     .setConnectionPoolSize(shiroRedisProperties.getConnectPoolSize())
                     .setTimeout(shiroRedisProperties.getTimeout());
         } else if (nodes.length > 1) {

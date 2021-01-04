@@ -26,3 +26,4 @@ custom:
     connect-pool-size: 150
     connection-minimumidle-size: 30
     timeout: 6000
+    globalSessionTimeout: 360000
