@@ -12,6 +12,7 @@ import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.shiro.demo.core.ShiroDbRealm;
 import org.shiro.demo.core.filter.CustomFilter;
+import org.shiro.demo.core.filter.SingletonLoginFilter;
 import org.shiro.demo.core.impl.RedisSessionDao;
 import org.shiro.demo.core.impl.ShiroDbRealmImpl;
 import org.shiro.demo.properties.LinkedProperties;
@@ -211,6 +212,8 @@ public class ShiroConfig {
     private Map<String, Filter> customFilterMap() {
         Map<String, Filter> map = new HashMap<>(1);
         map.put("roles-or", new CustomFilter());
+        //  单点登录过滤器
+        map.put("singleton-login", new SingletonLoginFilter(redissonClient(), redisSessionDao(), securityManager()));
         return map;
     }
 
