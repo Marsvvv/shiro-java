@@ -8,6 +8,7 @@ import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+import org.redisson.api.RedissonClient;
 import org.shiro.demo.constant.CacheConstant;
 import org.shiro.demo.constant.CredentialConstant;
 import org.shiro.demo.core.ShiroDbRealm;
@@ -29,6 +30,9 @@ public class ShiroDbRealmImpl extends ShiroDbRealm {
 
     @Autowired
     SimpleCacheService simpleCacheService;
+
+    @Autowired
+    RedissonClient redissonClient;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -53,10 +57,16 @@ public class ShiroDbRealmImpl extends ShiroDbRealm {
 
     @Override
     public void initCredentialsMatcher() {
-        HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
+        /*HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
         hashedCredentialsMatcher.setHashIterations(CredentialConstant.HASH_ITERATIONS);
         hashedCredentialsMatcher.setHashAlgorithmName(CredentialConstant.HASH_ALGORITHM);
-        setCredentialsMatcher(hashedCredentialsMatcher);
+        setCredentialsMatcher(hashedCredentialsMatcher);*/
+
+        //  自定义密码比较器
+        RetryLimitCredentialsMatcher retryLimitCredentialsMatcher = new RetryLimitCredentialsMatcher(redissonClient);
+        retryLimitCredentialsMatcher.setHashIterations(CredentialConstant.HASH_ITERATIONS);
+        retryLimitCredentialsMatcher.setHashAlgorithmName(CredentialConstant.HASH_ALGORITHM);
+        setCredentialsMatcher(retryLimitCredentialsMatcher);
     }
 
     /**
