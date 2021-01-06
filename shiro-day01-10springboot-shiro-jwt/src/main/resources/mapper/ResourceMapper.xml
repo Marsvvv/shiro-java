@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.shiro.demo.mapper.ResourceMapper">
+
+    <select id="findResourcesByUserId" resultType="org.shiro.demo.entity.Resource">
+        SELECT re.*
+        FROM sh_resource re
+                 LEFT JOIN sh_role_resource rr ON rr.RESOURCE_ID = re.ID
+                 LEFT JOIN sh_role ro ON rr.ROLE_ID = ro.ID
+                 LEFT JOIN sh_user_role ur ON ur.ROLE_ID = ro.ID
+                 LEFT JOIN sh_user u ON u.ID = ur.USER_ID
+        WHERE rr.ENABLE_FLAG = 'YES'
+          AND re.ENABLE_FLAG = 'YES'
+          AND ro.ENABLE_FLAG = 'YES'
+          AND ur.ENABLE_FLAG = 'YES'
+          AND u.ENABLE_FLAG = 'YES'
+          AND u.ID = #{userId}
+    </select>
+
+    <select id="findResourceList" resultType="org.shiro.demo.entity.Resource">
+        SELECT *
+        FROM sh_resource r
+        <where>
+            r.ENABLE_FLAG='YES'
+            AND r.PARENT_ID != -1
+            <if test="parentId != null and parentId != ''">
+                AND r.PARENT_ID=#{parentId}
+            </if>
+            <if test="resourceName != null and resourceName != ''">
+                AND r.RESOURCE_NAME=#{resourceName}
+            </if>
+            <if test="label != null and label != ''">
+                AND r.LABEL=#{label}
+            </if>
+            <if test="requestPath != null and requestPath != ''">
+                AND r.REQUEST_PATH=#{requestPath}
+            </if>
+        </where>
+        ORDER BY r.PARENT_ID ASC, SORT_NO ASC
+    </select>
+</mapper>

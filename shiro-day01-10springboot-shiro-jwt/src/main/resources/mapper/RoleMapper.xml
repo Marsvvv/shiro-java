@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.shiro.demo.mapper.RoleMapper">
+
+    <select id="findRoleList" resultType="org.shiro.demo.entity.Role">
+        SELECT r.*
+        FROM sh_role r
+                 LEFT JOIN sh_user_role ur ON ur.ROLE_ID = r.ID
+                 LEFT JOIN sh_user u ON u.ID = ur.USER_ID
+        WHERE u.ID = #{userId}
+    </select>
+
+    <select id="findRolePage" resultType="org.shiro.demo.entity.Role">
+        SELECT *
+        <include refid="role"></include>
+        ORDER BY r.SORT_NO ASC
+    </select>
+
+    <sql id="role">
+        FROM sh_role r
+        <where>
+            <if test="roleName != null and roleName != ''">
+                AND r.ROLE_NAME=#{roleName}
+            </if>
+            <if test="label != null and label != ''">
+                AND r.LABEL=#{label}
+            </if>
+        </where>
+    </sql>
+</mapper>

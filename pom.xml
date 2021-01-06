@@ -19,5 +19,6 @@
         <module>shiro-day01-07web</module>
         <module>shiro-day01-08web-java</module>
         <module>shiro-day01-09springboot-shiro</module>
+        <module>shiro-day01-10springboot-shiro-jwt</module>
     </modules>
 </project>
