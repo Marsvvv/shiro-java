@@ -1,1 +1,0 @@
-<script type="text/javascript" src="${ctx}/static/jquery/jqueryApi/easyui/locale/easyui-lang-zh_CN.js"></script>
