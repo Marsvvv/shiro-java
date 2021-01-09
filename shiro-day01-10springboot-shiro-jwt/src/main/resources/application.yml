@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.111.91.200:3306/shiro-java?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  # SpringMVC配置
+  mvc:
+    view:
+      prefix: /WEB-INF/views
+      suffix: .jsp
+    # 只有静态资源满足什么样的匹配条件，Spring Boot才会处理静态资源请求
+    static-path-pattern: /static/**
+  # 告诉Spring Boot应该在何处查找静态资源文件，这是一个列表性的配置，查找文件时会依赖于配置的先后顺序依次进行
+  # resources:
+  #   static-locations=classpath:/static,classpath:/public,classpath:/resources,classpath:/META-INF/resources:server:
+  port: 8080
+logging:
+  config: classpath:logback-spring.xml
+custom:
+  resource:
+    systemCode: shiro-mgt
+  redis:
+    nodes: redis://47.111.91.200:6379
+    connect-timeout: 6000
+    connect-pool-size: 150
+    connection-minimumidle-size: 30
+    timeout: 6000
+    globalSessionTimeout: 360000
+  jwt:
+    base64-encoded-secret-key: secret
