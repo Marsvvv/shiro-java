@@ -9,11 +9,11 @@
                  LEFT JOIN sh_role ro ON rr.ROLE_ID = ro.ID
                  LEFT JOIN sh_user_role ur ON ur.ROLE_ID = ro.ID
                  LEFT JOIN sh_user u ON u.ID = ur.USER_ID
-        WHERE rr.ENABLE_FLAG = TRUE
-          AND re.ENABLE_FLAG = TRUE
-          AND ro.ENABLE_FLAG = TRUE
-          AND ur.ENABLE_FLAG = TRUE
-          AND u.ENABLE_FLAG = TRUE
+        WHERE rr.ENABLE_FLAG = 'aaa'
+          AND re.ENABLE_FLAG = 'aaa'
+          AND ro.ENABLE_FLAG = 'YES'
+          AND ur.ENABLE_FLAG = 'YES'
+          AND u.ENABLE_FLAG = 'YES'
           AND u.ID = #{userId}
     </select>
 
@@ -21,7 +21,7 @@
         SELECT *
         FROM sh_resource r
         <where>
-            r.ENABLE_FLAG=TRUE
+            r.ENABLE_FLAG='YES'
             AND r.PARENT_ID != -1
             <if test="parentId != null and parentId != ''">
                 AND r.PARENT_ID=#{parentId}

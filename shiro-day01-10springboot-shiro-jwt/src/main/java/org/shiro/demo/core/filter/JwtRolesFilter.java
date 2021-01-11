@@ -2,6 +2,8 @@ package org.shiro.demo.core.filter;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.authz.RolesAuthorizationFilter;
 import org.shiro.demo.constant.ShiroConstant;
 import org.shiro.demo.web.BaseResponse;

@@ -86,7 +86,8 @@ public class UserBridgeServiceImpl implements UserBridgeService {
         String key = CacheConstant.ROLE_KEY + sessionId;
         Cache<Object, Object> cache = simpleCacheService.getCache(key);
         if (BeanUtil.isNotEmpty(cache)) {
-            return (AuthorizationInfo) cache.get(key);
+            AuthorizationInfo authorizationInfo = (AuthorizationInfo) cache.get(key);
+            return authorizationInfo;
         }
         //  查询用户对应的资源角色
         List<Role> roleList = roleMapper.findRoleList(shiroUser.getId());

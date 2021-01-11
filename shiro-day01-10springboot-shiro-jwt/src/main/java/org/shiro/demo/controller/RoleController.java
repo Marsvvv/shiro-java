@@ -56,7 +56,7 @@ public class RoleController {
      */
     @RequestMapping(value = "/list")
     @ResponseBody
-    public ModelMap list(RoleVo roleVo, Integer rows, Integer page) {
+    public ModelMap list(RoleVo roleVo, @RequestParam(defaultValue = "5") Integer rows, @RequestParam(defaultValue = "1") Integer page) {
         IPage<Role> iPage = iRoleService.findRoleList(roleVo, rows, page);
         ModelMap modelMap = new ModelMap();
         modelMap.put("rows", iPage.getRecords());
