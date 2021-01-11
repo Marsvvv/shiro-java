@@ -10,8 +10,7 @@ import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.shiro.demo.core.ShiroDbRealm;
-import org.shiro.demo.core.filter.CustomFilter;
-import org.shiro.demo.core.filter.SingletonLoginFilter;
+import org.shiro.demo.core.filter.*;
 import org.shiro.demo.core.impl.JwtTokenManager;
 import org.shiro.demo.core.impl.RedisSessionDao;
 import org.shiro.demo.core.impl.ShiroDbRealmImpl;
@@ -219,6 +218,9 @@ public class ShiroConfig {
         map.put("roles-or", new CustomFilter());
         //  单点登录过滤器
         map.put("singleton-login", new SingletonLoginFilter(redissonClient(), redisSessionDao(), securityManager()));
+        map.put("jwt-auth", new JwtAuthcFilter(jwtTokenManager));
+        map.put("jwt-perms", new JwtPermsFilter());
+        map.put("jwt-roles", new JwtRolesFilter());
         return map;
     }
 

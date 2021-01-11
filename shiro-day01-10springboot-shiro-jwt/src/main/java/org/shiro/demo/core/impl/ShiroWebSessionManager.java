@@ -2,6 +2,7 @@ package org.shiro.demo.core.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;
+import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import lombok.Getter;
 import lombok.Setter;
@@ -48,8 +49,7 @@ public class ShiroWebSessionManager extends DefaultWebSessionManager {
 
         //  jwtToken不为空，所以获取
         DecodedJWT decode = jwtTokenManager.decode(jwtToken);
-        Map<String, Object> payload = JSONObject.parseObject(decode.getPayload());
-        String jti = (String) payload.get("jti");
+        String jti = decode.getId();
         request.setAttribute(ShiroHttpServletRequest.REFERENCED_SESSION_ID_SOURCE,
                 ShiroHttpServletRequest.URL_SESSION_ID_SOURCE);
         request.setAttribute(ShiroHttpServletRequest.REFERENCED_SESSION_ID, jti);

@@ -54,7 +54,7 @@ public class RoleController {
      * @param page   分页对象
      * @return ModelMap
      */
-    @RequestMapping(value = "list")
+    @RequestMapping(value = "/list")
     @ResponseBody
     public ModelMap list(RoleVo roleVo, Integer rows, Integer page) {
         IPage<Role> iPage = iRoleService.findRoleList(roleVo, rows, page);
